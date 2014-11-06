@@ -5,7 +5,7 @@ dependencies = [
  "cgmath 0.0.1 (git+http://github.com/bjz/cgmath-rs)",
  "gfx 0.1.0 (git+https://github.com/gfx-rs/gfx-rs)",
  "glfw 0.0.1 (git+https://github.com/bjz/glfw-rs.git)",
- "net 0.0.1",
+ "net 0.0.1 (git+http://github.com/osiris-game/net)",
  "nice_glfw 1.0.0 (git+https://github.com/cmr/nice_glfw.git)",
 ]
 
@@ -92,6 +92,7 @@ source = "git+https://github.com/csherratt/glfw#9f2ffe50c5575f2a7f4d44928d39697a
 [[package]]
 name = "net"
 version = "0.0.1"
+source = "git+http://github.com/osiris-game/net#ce37b490f80a257b58cfefb40a7c86af6fab031f"
 dependencies = [
  "capnp 0.1.0 (git+https://github.com/dwrensha/capnproto-rust.git)",
 ]
