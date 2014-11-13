@@ -12,17 +12,17 @@ dependencies = [
 [[package]]
 name = "capnp"
 version = "0.1.0"
-source = "git+https://github.com/dwrensha/capnproto-rust.git#dea1f7ed547e4b6396b298e071d0c6c0d4082e5f"
+source = "git+https://github.com/dwrensha/capnproto-rust.git#eff80436f6ac3048bbc432698dc192d2b925ce8f"
 
 [[package]]
 name = "cgmath"
 version = "0.0.1"
-source = "git+http://github.com/bjz/cgmath-rs#66114567919a2304d9d977c542198bec6d4f2e39"
+source = "git+http://github.com/bjz/cgmath-rs#2fe17066b21949b03802a4af96aa7e5e4303bffc"
 
 [[package]]
 name = "device"
 version = "0.1.0"
-source = "git+https://github.com/gfx-rs/gfx-rs#d6df9735508419f4b2f8cbf635704d371b594b92"
+source = "git+https://github.com/gfx-rs/gfx-rs#8c30d07565fcde68a95389ab6baf0e49e0b30c7d"
 dependencies = [
  "gfx_gl 0.1.0 (git+https://github.com/gfx-rs/gfx_gl.git)",
 ]
@@ -30,7 +30,7 @@ dependencies = [
 [[package]]
 name = "gfx"
 version = "0.1.0"
-source = "git+https://github.com/gfx-rs/gfx-rs#d6df9735508419f4b2f8cbf635704d371b594b92"
+source = "git+https://github.com/gfx-rs/gfx-rs#8c30d07565fcde68a95389ab6baf0e49e0b30c7d"
 dependencies = [
  "device 0.1.0 (git+https://github.com/gfx-rs/gfx-rs)",
  "gfx_macros 0.1.0 (git+https://github.com/gfx-rs/gfx-rs)",
@@ -48,20 +48,20 @@ dependencies = [
 [[package]]
 name = "gfx_macros"
 version = "0.1.0"
-source = "git+https://github.com/gfx-rs/gfx-rs#d6df9735508419f4b2f8cbf635704d371b594b92"
+source = "git+https://github.com/gfx-rs/gfx-rs#8c30d07565fcde68a95389ab6baf0e49e0b30c7d"
 
 [[package]]
 name = "gl_common"
 version = "0.0.1"
-source = "git+https://github.com/bjz/gl-rs.git#678346eb5f8ba95f50a8d0f7ff9d87a7338953dc"
+source = "git+https://github.com/bjz/gl-rs.git#218f14c94d79331fc5487f8564dc71f7ec4a22a8"
 
 [[package]]
 name = "gl_generator"
 version = "0.0.1"
-source = "git+https://github.com/bjz/gl-rs.git#678346eb5f8ba95f50a8d0f7ff9d87a7338953dc"
+source = "git+https://github.com/bjz/gl-rs.git#218f14c94d79331fc5487f8564dc71f7ec4a22a8"
 dependencies = [
  "gl_common 0.0.1 (git+https://github.com/bjz/gl-rs.git)",
- "khronos_api 0.0.1 (git+https://github.com/bjz/gl-rs.git)",
+ "khronos_api 0.0.2 (git+https://github.com/bjz/gl-rs.git)",
  "rust-xml 0.1.0 (git+https://github.com/netvl/rust-xml)",
 ]
 
@@ -81,8 +81,8 @@ source = "git+https://github.com/servo/glfw?ref=cargo-3.0.4#765dace7e4125b87c764
 
 [[package]]
 name = "khronos_api"
-version = "0.0.1"
-source = "git+https://github.com/bjz/gl-rs.git#678346eb5f8ba95f50a8d0f7ff9d87a7338953dc"
+version = "0.0.2"
+source = "git+https://github.com/bjz/gl-rs.git#218f14c94d79331fc5487f8564dc71f7ec4a22a8"
 
 [[package]]
 name = "libglfw"
@@ -92,7 +92,7 @@ source = "git+https://github.com/csherratt/glfw#9f2ffe50c5575f2a7f4d44928d39697a
 [[package]]
 name = "net"
 version = "0.0.1"
-source = "git+http://github.com/osiris-game/net#ce37b490f80a257b58cfefb40a7c86af6fab031f"
+source = "git+http://github.com/osiris-game/net#aab18443205ec9b63e0040a954d9226febd30268"
 dependencies = [
  "capnp 0.1.0 (git+https://github.com/dwrensha/capnproto-rust.git)",
 ]
@@ -109,7 +109,7 @@ dependencies = [
 [[package]]
 name = "render"
 version = "0.1.0"
-source = "git+https://github.com/gfx-rs/gfx-rs#d6df9735508419f4b2f8cbf635704d371b594b92"
+source = "git+https://github.com/gfx-rs/gfx-rs#8c30d07565fcde68a95389ab6baf0e49e0b30c7d"
 dependencies = [
  "device 0.1.0 (git+https://github.com/gfx-rs/gfx-rs)",
 ]
@@ -117,7 +117,7 @@ dependencies = [
 [[package]]
 name = "rust-xml"
 version = "0.1.0"
-source = "git+https://github.com/netvl/rust-xml#a4109a2b99e602a26f157f052f4d2677f9b4aa8e"
+source = "git+https://github.com/netvl/rust-xml#d6c57380a300b94f7e7881979dbe5459dbe4ca06"
 
 [[package]]
 name = "semver"

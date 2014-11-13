@@ -38,7 +38,7 @@ struct Params {
     color: gfx::shade::TextureParam,
 }
 
-static VERTEX_SRC: gfx::ShaderSource = shaders! {
+static VERTEX_SRC: gfx::ShaderSource<'static> = shaders! {
 GLSL_120: b"
     #version 120
 
@@ -69,7 +69,7 @@ GLSL_150: b"
 "
 };
 
-static FRAGMENT_SRC: gfx::ShaderSource = shaders! {
+static FRAGMENT_SRC: gfx::ShaderSource<'static> = shaders! {
 GLSL_120: b"
     #version 120
 
