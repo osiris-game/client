@@ -219,7 +219,7 @@ fn main() {
 
     while !window.should_close() {
         glfw.poll_events();
-        let mut cubeMoved = false;
+        let mut cube_moved = false;
         for (_, event) in glfw::flush_messages(&events) {
             match event {
                 glfw::SizeEvent(w, h) => {
@@ -238,28 +238,28 @@ fn main() {
                     trans = Matrix4::<f32>::from_translation(&Vector3::new(x, 0f32, y));
                     tmp = viewm.mul_m(&trans);
                     data.transform = proj.mul_m(&tmp).into_fixed();
-                    cubeMoved = true;
+                    cube_moved = true;
                 }
                 glfw::KeyEvent(glfw::KeyDown, _, glfw::Press, _) => {
                     y = y-1f32;
                     trans = Matrix4::<f32>::from_translation(&Vector3::new(x, 0f32, y));
                     tmp = viewm.mul_m(&trans);
                     data.transform = proj.mul_m(&tmp).into_fixed();
-                    cubeMoved = true;
+                    cube_moved = true;
                 }
                 glfw::KeyEvent(glfw::KeyRight, _, glfw::Press, _) => {
                     x = x+1f32;
                     trans = Matrix4::<f32>::from_translation(&Vector3::new(x, 0f32, y));
                     tmp = viewm.mul_m(&trans);
                     data.transform = proj.mul_m(&tmp).into_fixed();
-                    cubeMoved = true;
+                    cube_moved = true;
                 }
                 glfw::KeyEvent(glfw::KeyLeft, _, glfw::Press, _) => {
                     x = x-1f32;
                     trans = Matrix4::<f32>::from_translation(&Vector3::new(x, 0f32, y));
                     tmp = viewm.mul_m(&trans);
                     data.transform = proj.mul_m(&tmp).into_fixed();
-                    cubeMoved = true;
+                    cube_moved = true;
                 }
 
                 _ => {},
@@ -272,7 +272,7 @@ fn main() {
 
         window.swap_buffers();
 
-        if cubeMoved {
+        if cube_moved {
             println!("Sending cube moved");
             conn.send_move_cube(x, y, 0f32);
         }
